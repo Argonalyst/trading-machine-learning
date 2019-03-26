@@ -25,7 +25,7 @@ def define_best_strategy(n, volume, transaction_fee, strategies):
     
     #preços para treinar o algoritmo
     prices = np.array([])
-    with open(r'prices-trandingML.txt', 'r') as f:
+    with open(r'prices-trading-ml.txt', 'r') as f:
         lines = f.readlines()
 
         for i in lines:
@@ -170,7 +170,7 @@ def define_best_strategy(n, volume, transaction_fee, strategies):
 #novos dados para analisar ------
 
     prices_new = np.array([])
-    with open(r'prices-trandingML.txt', 'r') as f:
+    with open(r'prices-trading-ml.txt', 'r') as f:
         lines = f.readlines()        
         for i in lines:            
             prices_new = np.append(prices_new, float(i))
